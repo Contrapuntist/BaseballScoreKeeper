@@ -7,99 +7,134 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:contentDescription="Home plate on a baseball field"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseball_home_plate" />
 
     <!-- container for both teams -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_margin="16dp">
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
 
         <!-- Team A -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="4dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:background="#aa1B5E20"
+                android:orientation="vertical"
+                android:padding="8dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_bold"
                     android:gravity="center_horizontal"
-                    android:text="Team A" />
+                    android:padding="4dp"
+                    android:text="@string/jedis"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp" />
 
                 <TextView
                     android:id="@+id/team_a_score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_regular"
                     android:gravity="center_horizontal"
-                    android:text="0" />
+                    android:text="@string/starting_score"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
                         android:layout_weight="1"
-                        android:layout_marginLeft="32dp"
-                        android:text="Hits" />
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/hit"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
 
                     <TextView
                         android:id="@+id/team_a_hits"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/nunito_sans_regular"
                         android:gravity="center_horizontal"
-                        android:text="0" />
+                        android:text="@string/starting_hits"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
                         android:layout_weight="1"
-                        android:layout_marginLeft="32dp"
-                        android:text="Error" />
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:text="@string/error"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
 
                     <TextView
                         android:id="@+id/team_a_errors"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/nunito_sans_regular"
                         android:gravity="center_horizontal"
-                        android:text="0" />
+                        android:text="@string/starting_errors"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
                 </LinearLayout>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Run"
-                    android:onClick="addRunTeamA"/>
+                    android:layout_marginBottom="8dp"
+                    android:background="#81C784"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:onClick="addRunTeamA"
+                    android:text="@string/btn_run" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="hit"
-                    android:onClick="addHitTeamA"/>
+                    android:layout_marginBottom="8dp"
+                    android:background="#81C784"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:onClick="addHitTeamA"
+                    android:text="@string/btn_hit" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="#81C784"
+                    android:fontFamily="@font/nunito_sans_bold"
                     android:onClick="addErrorTeamA"
-                    android:text="error" />
+                    android:text="@string/btn_error" />
             </LinearLayout>
 
         </LinearLayout>
@@ -108,86 +143,115 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="4dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:background="#aa41200d"
+                android:orientation="vertical"
+                android:padding="8dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_bold"
                     android:gravity="center_horizontal"
-                    android:text="Team B" />
+                    android:padding="4dp"
+                    android:text="@string/siths"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp" />
 
                 <TextView
                     android:id="@+id/team_b_score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_regular"
                     android:gravity="center_horizontal"
-                    android:text="0" />
+                    android:text="@string/starting_score"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginLeft="32dp"
-                        android:text="Hits" />
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:gravity="center_horizontal"
+                        android:text="@string/hit"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
 
                     <TextView
                         android:id="@+id/team_b_hits"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/nunito_sans_regular"
                         android:gravity="center_horizontal"
-                        android:text="0" />
+                        android:text="@string/starting_hits"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginLeft="32dp"
-                        android:text="Error" />
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:gravity="center_horizontal"
+                        android:text="@string/error"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
 
                     <TextView
                         android:id="@+id/team_b_errors"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/nunito_sans_regular"
                         android:gravity="center_horizontal"
-                        android:text="0" />
+                        android:text="@string/starting_errors"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
                 </LinearLayout>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Run"
-                    android:onClick="addRunTeamB"/>
+                    android:layout_marginBottom="8dp"
+                    android:background="#BCAAA4"
+                    android:onClick="addRunTeamB"
+                    android:text="@string/btn_run" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="hit"
-                    android:onClick="addHitTeamB"/>
+                    android:layout_marginBottom="8dp"
+                    android:background="#BCAAA4"
+                    android:onClick="addHitTeamB"
+                    android:text="@string/btn_hit" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="error"
-                    android:onClick="addErrorTeamB"/>
+                    android:background="#BCAAA4"
+                    android:onClick="addErrorTeamB"
+                    android:text="@string/btn_error" />
             </LinearLayout>
 
         </LinearLayout>
@@ -195,11 +259,19 @@
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="reset"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="gameReset"/>
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:background="#ddB71C1C"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:onClick="gameReset"
+        android:padding="16dp"
+        android:text="@string/reset"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
 
 </RelativeLayout>

@@ -107,14 +107,3 @@ public class MainActivity extends AppCompatActivity {
         displayTeamBErrors(errorsTeamB);
     }
 }
-
-
-//    public void displayForTeamB(int score) {
-//        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
-//        scoreView.setText(String.valueOf(score));
-//    }
-
-//    public void addThreePointsForTeamA(View view) {
-//        scoreTeamA += 3;
-//        displayForTeamA(scoreTeamA);
-//    }

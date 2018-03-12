@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Baseball Score Keeper</string>
+    <string name="btn_run">Run</string>
+    <string name="btn_hit">Hit</string>
+    <string name="btn_error">Error</string>
+    <string name="run">Runs</string>
+    <string name="hit">Hits</string>
+    <string name="error">Errors</string>
+    <string name="jedis">Jedis</string>
+    <string name="siths">Siths</string>
+    <string name="starting_score">0</string>
+    <string name="starting_hits">0</string>
+    <string name="starting_errors">0</string>
+    <string name="reset">reset</string>
 </resources>
